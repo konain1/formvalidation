@@ -56,7 +56,7 @@ function validatePhone(){
 function validateEmail(){
 
     let email = document.getElementById('contact-email').value;
-
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if(email.length == 0){
         emailError.innerHTML = 'Email is required'
         return false;
